@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+.header {
+  background-image: url("../images/header.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.95) 100%);
+  background-blend-mode: multiply;
+}
+.firstImage {
+  background-image: url("../images/tv.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+
+}
+.scrollEffect {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+.scrollEffect::-webkit-scrollbar {
+display: none;
+}
+
+.ReactCollapse--collapse {
+	transition: height 500ms;
+}
+
+.dim {
+	background-color: rgba(0, 0, 0, 0.9);
+}
